@@ -1,5 +1,8 @@
 def alphabetize(arr)
-  arr.sort_by("abcĉdefgĝhĥijĵklmnoprsŝtuŭvz")  do |x, y|
-    x <=> y
+  ESPERANTO_ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+  arr.sort_by do |phrase| 
+    phrase.split("").collect do |first_letter|
+      ESPERANTO_ALPHABET.chars.index(first_letter)
+    end
   end
 end
