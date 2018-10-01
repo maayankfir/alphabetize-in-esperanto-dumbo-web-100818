@@ -1,5 +1,5 @@
 def alphabetize(arr)
   arr.sort do |x, y|
-    y <=> x
+    x <=> y
   end
 end
