@@ -1,4 +1,4 @@
 def alphabetize(arr)
-  arr.chara.sort.join
+  arr.chars.sort.join
 
 end
